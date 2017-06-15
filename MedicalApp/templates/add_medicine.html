@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Add Medicine
+{% endblock %}
+
+{% block content %}
+  <div class="content-header">
+    <span>Add Medicine</span>
+  </div>
+  <div class="content">
+    <form class="add-medicine" method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="action-bar">
+        <button type="submit">Save</button>
+        <button type="cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}

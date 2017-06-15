@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Edit Medicine
+{% endblock %}
+
+{% block content %}
+  <div class="content">
+    <form class="edit-medicine" method="POST">
+      <p>{{ medicine.name }}</p>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="action-bar">
+        <button type="submit">Save</button>
+        <button type="cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}

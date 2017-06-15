@@ -1,0 +1,122 @@
+[
+{
+  "model": "MedicalApp.doctor",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "first_name": "Marta",
+    "last_name": "Weyer",
+    "phone": "1512311724",
+    "email": "marta.weyer@gmail.com",
+    "cnp": "4768028911065"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 2,
+  "fields": {
+    "user": 4,
+    "first_name": "Franklin",
+    "last_name": "Schlager",
+    "phone": "5368713479",
+    "email": "Franklin.Schlager@gmail.com",
+    "cnp": "2910508987764"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 3,
+  "fields": {
+    "user": 5,
+    "first_name": "Lesia",
+    "last_name": "Shin",
+    "phone": "4461851097",
+    "email": "Lesia.Shin@gmail.com",
+    "cnp": "1682337288534"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 4,
+  "fields": {
+    "user": 6,
+    "first_name": "Noble",
+    "last_name": "Burgett",
+    "phone": "1012650269",
+    "email": "Noble.Burgett@gmail.com",
+    "cnp": "8081044895859"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 5,
+  "fields": {
+    "user": 7,
+    "first_name": "Carie",
+    "last_name": "Colvard",
+    "phone": "6683077960",
+    "email": "Carie.Colvard@gmail.com",
+    "cnp": "7226357214903"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 6,
+  "fields": {
+    "user": 8,
+    "first_name": "Arianna",
+    "last_name": "Hazelrig",
+    "phone": "4366768743",
+    "email": "Arianna.Hazelrig@gmail.com",
+    "cnp": "4768028911065"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 7,
+  "fields": {
+    "user": 9,
+    "first_name": "Wilbert",
+    "last_name": "Bloodsaw",
+    "phone": "8355355618",
+    "email": "Wilbert.Bloodsaw@gmail.com",
+    "cnp": "8782993714834"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 8,
+  "fields": {
+    "user": 10,
+    "first_name": "Dot",
+    "last_name": "Badilla",
+    "phone": "9282082845",
+    "email": "Dot.Badilla@gmail.com",
+    "cnp": "8076455468949"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 9,
+  "fields": {
+    "user": 11,
+    "first_name": "Mana",
+    "last_name": "Duque",
+    "phone": "8071762803",
+    "email": "Mana.Duque@gmail.com",
+    "cnp": "1180221198802"
+  }
+},
+{
+  "model": "MedicalApp.doctor",
+  "pk": 10,
+  "fields": {
+    "user": 12,
+    "first_name": "Milo",
+    "last_name": "Hickox",
+    "phone": "6248760826",
+    "email": "Milo.Hickox@gmail.com",
+    "cnp": "4819544969800"
+  }
+}
+]

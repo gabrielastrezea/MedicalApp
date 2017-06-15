@@ -1,0 +1,252 @@
+[
+	{
+		"pk": 1,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Serdimid"}
+	},
+	{
+		"pk": 2,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Indapamid"}
+	},
+	{
+		"pk": 3,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Betaprol"}
+	},
+	{
+		"pk": 4,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Metroprolol"}
+	},
+	{
+		"pk": 5,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Lokren"}
+	},
+	{
+		"pk": 6,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Concor"}
+	},
+	{
+		"pk": 7,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Bisogamma"}
+	},
+	{
+		"pk": 8,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Bisotens"}
+	},
+	{
+		"pk": 9,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Talosan"}
+	},
+	{
+		"pk": 10,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Zeplan"}
+	},
+	{
+		"pk": 11,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Vasilip"}
+	},
+	{
+		"pk": 12,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Sintenal"}
+	},
+	{
+		"pk": 13,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Simvacard"}
+	},
+	{
+		"pk": 14,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Cuminol"}
+	},
+	{
+		"pk": 15,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Ciprinol"}
+	},
+	{
+		"pk": 16,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Ofloxin"}
+	},
+	{
+		"pk": 17,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Pravator"}
+	},
+	{
+		"pk": 18,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Testim"}
+	},
+	{
+		"pk": 19,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Ciprobay"}
+	},
+	{
+		"pk": 20,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Pefloxacin"}
+	},
+	{
+		"pk": 21,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Androgel"}
+	},
+	{
+		"pk": 22,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Fragmin"}
+	},
+	{
+		"pk": 23,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Clexane"}
+	},
+	{
+		"pk": 24,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Innohep"}
+	},
+	{
+		"pk": 25,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Inspra"}
+	},
+	{
+		"pk": 26,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Diovan"}
+	},
+	{
+		"pk": 27,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Avassan"}
+	},
+	{
+		"pk": 28,
+		"model": "MedicalApp.medicine",
+	"fields": {"name": "Vapress"}
+	},
+	{
+		"pk": 29,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Irbesartan"}
+	},
+	{
+		"pk": 30,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Aprovel"}
+	},
+	{
+		"pk": 31,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Micardis"}
+	},
+	{
+		"pk": 32,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Tanydon"}
+	},
+	{
+		"pk": 33,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Telmotens"}
+	},
+	{
+		"pk": 34,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Lescol"}
+	},
+	{
+		"pk": 35,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Sortis"}
+	},
+	{
+		"pk": 36,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Gledor"}
+	},
+	{
+		"pk": 37,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Crestor"}
+	},
+	{
+		"pk": 38,
+		"model": "MedicalApp.medicine",
+	"fields": {"name": "Rosucard"}
+	},
+	{
+		"pk": 39,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Rostat"}
+	},
+	{
+		"pk": 40,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Tintaros"}
+	},
+	{
+		"pk": 41,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Zomacton"}
+	},
+	{
+		"pk": 42,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Nutropina"}
+	},
+	{
+		"pk": 43,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Omnitrope"}
+	},
+	{
+		"pk": 44,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Norditropin"}
+	},
+	{
+		"pk": 45,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Dulsevia"}
+	},
+	{
+		"pk": 46,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Zatinex"}
+	},
+	{
+		"pk": 47,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Onelar"}
+	},
+	{
+		"pk": 48,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Cymbal"}
+	},
+	{
+		"pk": 49,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Duloxetina"}
+	},
+	{
+		"pk": 50,
+		"model": "MedicalApp.medicine",
+		"fields": {"name": "Opatanol"}
+	}
+]

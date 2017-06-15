@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Medicines
+{% endblock %}
+
+{% block content %}
+<div class="lists-content">
+  <ul>
+  {% for medicine in medicines %}
+    <li>{{ medicine.name }}</li>
+    <a href="{% url 'edit_medicine' medicine.pk %}">Edit</a>
+  {% endfor %}
+  </ul>
+</div>
+<a href="{% url 'add_medicine' %}">Add Medicine</a>
+{% endblock %}
