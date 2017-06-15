@@ -19,6 +19,11 @@
   $ source sandbox/bin/activate
 ```
 
+**Install Django:**
+```
+  $ pip install Django
+```
+
 **Apply migrations:**
 ```
   $ ./manage.py migrate
