@@ -34,6 +34,7 @@ class Patient(models.Model):
     block = models.CharField(max_length=20)
     appartment = models.DecimalField(max_digits=4, decimal_places=0)
     postal_code = models.DecimalField(max_digits=5, decimal_places=0)
+    doctor = models.ForeignKey(Doctor, null=True, related_name="patient")
 
     def __unicode__(self):
         return "Patient " + self.last_name + " " + self.first_name
@@ -47,7 +48,7 @@ class Medicine(models.Model):
 
 
 class DosingInterval(models.Model):
-    date = models.DateField(null=True)
+    time = models.TimeField(null=True)
     quantity = models.DecimalField(max_digits=1, decimal_places=0)
 
     def __unicode__(self):
@@ -73,3 +74,8 @@ class Prescription(models.Model):
 
     def __unicode__(self):
         return "Prescription" + self.pk
+
+
+class Appointment(models.Model):
+    patient = models.ForeignKey(Patient, related_name="appointment")
+    time = models.TimeField(null=True)

@@ -36,3 +36,10 @@ class DoctorForm(forms.Form):
                 User.objects.filter(patient__isnull=True, doctor__isnull=True)
             ]
         )
+
+
+class PrescriptionForm(forms.Form):
+    patient = forms.ChoiceField(choices=[('', "Patient")])
+    medicine = forms.ChoiceField(choices=[('', "Medicine")])
+    total_quantity = forms.DecimalField(label="Quantity")
+
