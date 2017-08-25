@@ -71,3 +71,53 @@ input:-webkit-autofill {
 .button-collapse i {
     margin-top: -12px;
 }
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.edit-info {
+        position: absolute;
+    /* right: 0; */
+    top: 8px;
+    right: 10px;
+}
+
+.brand-logo {
+    padding: .5rem!important;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px #aaa;
+    margin-top: -2rem;
+    height: 102px;
+}
+
+
+.brand-logo span {
+        top: 1.8rem;
+    position: relative;
+}
+
+
+.brand-logo .logo {
+    width: 139px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.brand-logo img {
+        width: 60%;
+    margin-top: 9px;
+}
+
+
+.collection-header.blue {
+    color: white;
+}

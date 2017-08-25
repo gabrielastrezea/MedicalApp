@@ -7,28 +7,32 @@
 {% endblock %}
 
 {% block content %}
-<div class="date-personale">
-  <div>Date personale:</div>
-  <div>Nume: {{ patient.first_name }} {{ patient.last_name }}</div>
-  <div>Telefon: {{ patient.phone }}</div>
-  <div>E-mail: {{ patient.cnp }}</div>
-</div>
+<h1>
+  Detalii pacient
+</h1>
+<ul class="date-personale collection with-header">
 
-<div class="edit-info">
-  <a href="">Edit info</a>
+<div class="edit-info clearfix">
+  <a class="waves-effect waves-light btn-large yellow darken-3 right">Edit info</a>
 </div>
+  <li class="collection-header blue lighten-1"><h5>Date personale</h5></li>
+  <li class="collection-item">Nume: {{ patient.first_name }} {{ patient.last_name }}</li>
+  <li class="collection-item">Telefon: {{ patient.phone }}</li>
+  <li class="collection-item">E-mail: {{ patient.cnp }}</li>
+</ul>
 
-<div class="programari">
-  <div>Programari:</div>
+
+<ul class="programari collection with-header  ">
+  <li class="collection-header blue lighten-1"><h5>Programari</h5></li>
 
   {% if appointments %}
     {% for appointment in appointments %}
-      <div>{{ appointment.week_day }}, {{ appointment.day}} la ora {{ appointment.hour }}</div>
+      <li class="collection-item">{{ appointment.week_day }}, {{ appointment.day}} la ora {{ appointment.hour }}</li>
     {% endfor %}
   {% else %}
-    <div>Nu exista programari</div>
+    <li class="collection-item">Nu exista programari</li>
   {% endif %}
-</div>
+</ul>
 
 
 {% endblock %}
