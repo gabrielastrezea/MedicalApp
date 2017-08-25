@@ -1,0 +1,18 @@
+[
+  {
+    "model": "MedicalApp.appointment",
+    "pk": 1,
+    "fields": {
+      "patient": 3,
+      "time": "2017-08-28T06:00:00Z"
+    }
+  },
+  {
+    "model": "MedicalApp.appointment",
+    "pk": 2,
+    "fields": {
+      "patient": 3,
+      "time": "2017-08-29T18:00:00Z"
+    }
+  }
+]

@@ -4,10 +4,21 @@ from __future__ import unicode_literals
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.shortcuts import render, get_object_or_404, redirect
+import calendar
 
 from MedicalApp import models, forms
 
 # Create your views here.
+
+DAYS_OF_WEEK = {
+    'Monday': 'Luni',
+    'Tuesday': 'Marți',
+    'Wednesday': 'Miercuri',
+    'Thursday': 'Joi',
+    'Friday': 'Vineri',
+    'Saturday': 'Sâmbată',
+    'Sunday': 'Duminică'
+}
 
 
 def list_of_medicines(request):
@@ -82,8 +93,20 @@ def add_doctor(request):
 def patient_profile(request, patient_pk):
     template = 'patient_profile.html'
     patient = get_object_or_404(models.Patient, pk=patient_pk)
+    appointments = patient.appointment.all()
 
-    return render(request, template, {'patient': patient})
+    for appointment in appointments:
+        appointment.hour = appointment.time.strftime("%H:%M")
+        appointment.day = appointment.time.strftime("%d/%m/%Y")
+        appointment.week_day = DAYS_OF_WEEK[
+            calendar.day_name[appointment.time.weekday()]
+        ]
+
+    context = {
+        'patient': patient,
+        'appointments': appointments
+    }
+    return render(request, template, context)
 
 
 def login_view(request):

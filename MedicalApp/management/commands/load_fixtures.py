@@ -8,5 +8,6 @@ class Command(BaseCommand):
     help = "Load intial data"
 
     def handle(self, *args, **options):
-        for fixture in ('users', 'doctors', 'patients', 'medicine'):
+        for fixture in ('users', 'doctors', 'patients',
+                        'medicine', 'appointment'):
             call_command('loaddata', fixture)

@@ -78,4 +78,4 @@ class Prescription(models.Model):
 
 class Appointment(models.Model):
     patient = models.ForeignKey(Patient, related_name="appointment")
-    time = models.TimeField(null=True)
+    time = models.DateTimeField(auto_now_add=False, null=True)

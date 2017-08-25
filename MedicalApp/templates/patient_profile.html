@@ -5,3 +5,25 @@
   {{ patient.first_name }} {{ patient.last_name }} Profile
 
 {% endblock %}
+
+{% block content %}
+
+  <div>Date personale:</div>  
+  <div>Nume: {{ patient.first_name }} {{ patient.last_name }}</div>
+  <div>Telefon: {{ patient.phone }}</div>
+  <div>E-mail: {{ patient.cnp }}</div>
+
+  <a href="">Edit info</a>
+
+  <div>Programari:</div>
+
+  {% if appointments %}
+    {% for appointment in appointments %}
+      <div>{{ appointment.week_day }}, {{ appointment.day}} la ora {{ appointment.hour }}</div>    
+    {% endfor %}
+  {% else %}
+    <div>Nu exista programari</div>
+  {% endif %}
+
+  
+{% endblock %}
