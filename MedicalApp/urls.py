@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', views.login_view, name="login"),
@@ -26,4 +28,6 @@ urlpatterns = [
     url(r'^add_medicine/$', views.add_medicine, name="add_medicine"),
     url(r'^edit_medicine/(?P<medicine_pk>\d+)$',
         views.add_medicine, name="edit_medicine"),
-]
+    url(r'^patient_profile/(?P<patient_pk>\d+)$',
+        views.patient_profile, name="patient_profile"),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

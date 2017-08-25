@@ -79,6 +79,13 @@ def add_doctor(request):
     return render(request, 'add_doctor.html', {'form': form})
 
 
+def patient_profile(request, patient_pk):
+    template = 'patient_profile.html'
+    patient = get_object_or_404(models.Patient, pk=patient_pk)
+
+    return render(request, template, {'patient': patient})
+
+
 def login_view(request):
     context = {}
     if request.method == 'GET':

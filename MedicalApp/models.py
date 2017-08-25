@@ -73,7 +73,7 @@ class Prescription(models.Model):
         MedicineAdministration, related_name="prescription")
 
     def __unicode__(self):
-        return "Prescription" + self.pk
+        return "Prescription " + self.pk
 
 
 class Appointment(models.Model):
