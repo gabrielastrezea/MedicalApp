@@ -5,12 +5,28 @@
 {% endblock %}
 
 {% block content %}
-<div class="login-page">
-  <form class="login-form" method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {{ error_message }}
-    <button class="button" type="submit">Login</button>
-  </form>
-</div>
+<div class="login-page container">
+        <div class="z-depth-1 row login-form-wrapper">
+          <form autocomplete="nofill" class="col s12" method="POST">
+            <div class='logo-wrapper'>
+              <div class='logo'>
+                <img src="static/img/medap.svg">
+              </div>
+            </div>
+            <div class='row'>
+              <div class='input-field col s12'>
+                 {% csrf_token %}
+                 {{ form.as_p }}
+                 {{ error_message }}
+              </div>
+            </div>
+            <center>
+              <div class='row'>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect blue lighten-1
+'>Login</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
 {% endblock %}

@@ -2,9 +2,14 @@
 <html>
 <head>
 	<title>{% block title %}{% endblock %}</title>
+    <script src="static/lib/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/lib/materialize.css">
+    <script src="static/lib/materialize.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/main.css">
 </head>
 <body>
 	{% block content %}{% endblock %}
+    <script type="text/javascript" src="static/main.js"></script>
 </body>
 {% block scripts %}{% endblock %}
 </html>
