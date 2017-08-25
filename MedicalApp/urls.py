@@ -30,4 +30,6 @@ urlpatterns = [
         views.add_medicine, name="edit_medicine"),
     url(r'^patient_profile/(?P<patient_pk>\d+)$',
         views.patient_profile, name="patient_profile"),
+    url(r'^edit_patient/(?P<patient_pk>\d+)$',
+        views.edit_patient, name="edit_patient"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -43,3 +43,18 @@ class PrescriptionForm(forms.Form):
     medicine = forms.ChoiceField(choices=[('', "Medicine")])
     total_quantity = forms.DecimalField(label="Quantity")
 
+
+class PatientForm(forms.Form):
+    first_name = forms.CharField(label="First Name", required=True)
+    last_name = forms.CharField(label="Last Name")
+    phone = forms.DecimalField(label="Phone Number")
+    email = forms.EmailField(label="E-mail Address")
+    cnp = forms.DecimalField(label="CNP")
+    country = forms.CharField(label="Country")
+    city = forms.CharField(label="City")
+    sector = forms.CharField(label="Sector")
+    street_name = forms.CharField(label="Street Name")
+    street_number = forms.DecimalField(label="Street No")
+    block = forms.CharField(label="Block")
+    appartment = forms.DecimalField(label="Appartment")
+    postal_code = forms.DecimalField(label="Postal code")

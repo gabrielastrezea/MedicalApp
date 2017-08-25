@@ -13,14 +13,13 @@
 <ul class="date-personale collection with-header">
 
 <div class="edit-info clearfix">
-  <a class="waves-effect waves-light btn-large yellow darken-3 right">Edit info</a>
+  <a href="{% url 'edit_patient' patient.pk %}" class="waves-effect waves-light btn-large yellow darken-3 right">Edit info</a>
 </div>
   <li class="collection-header blue lighten-1"><h5>Date personale</h5></li>
   <li class="collection-item">Nume: {{ patient.first_name }} {{ patient.last_name }}</li>
   <li class="collection-item">Telefon: {{ patient.phone }}</li>
   <li class="collection-item">E-mail: {{ patient.cnp }}</li>
 </ul>
-
 
 <ul class="programari collection with-header  ">
   <li class="collection-header blue lighten-1"><h5>Programari</h5></li>

@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, get_object_or_404, redirect
 import calendar
 
+from django.forms.models import model_to_dict
 from MedicalApp import models, forms
 
 # Create your views here.
@@ -107,6 +108,38 @@ def patient_profile(request, patient_pk):
         'appointments': appointments
     }
     return render(request, template, context)
+
+
+def edit_patient(request, patient_pk):
+    template = 'edit_patient.html'
+    patient = get_object_or_404(models.Patient, pk=patient_pk)
+    initial_data = model_to_dict(patient)
+    del(initial_data['user'])
+    del(initial_data['id'])
+
+    if request.method == "POST":
+        form = forms.PatientForm(request.POST)
+        if form.is_valid():
+            models.Patient.objects.filter(pk=patient_pk).update(
+                first_name=form.cleaned_data['first_name'],
+                last_name=form.cleaned_data['last_name'],
+                phone=form.cleaned_data['phone'],
+                email=form.cleaned_data['email'],
+                cnp=form.cleaned_data['cnp'],
+                country=form.cleaned_data['country'],
+                city=form.cleaned_data['city'],
+                sector=form.cleaned_data['sector'],
+                street_name=form.cleaned_data['street_name'],
+                street_number=form.cleaned_data['street_number'],
+                block=form.cleaned_data['block'],
+                appartment=form.cleaned_data['appartment'],
+                postal_code=form.cleaned_data['postal_code']
+            )
+            return redirect('patient_profile', patient_pk=patient_pk)
+    else:
+        form = forms.PatientForm(initial=initial_data)
+
+    return render(request, template, {'form': form, 'patient': patient})
 
 
 def login_view(request):
