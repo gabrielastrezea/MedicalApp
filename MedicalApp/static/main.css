@@ -7,6 +7,10 @@ form p {
     margin-bottom: 2rem;
 }
 
+nav a.button-collapse {
+    display: block!important;
+}
+
 .login-page {
     display: flex;
     justify-content: center;
