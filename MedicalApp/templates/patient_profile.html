@@ -7,23 +7,28 @@
 {% endblock %}
 
 {% block content %}
-
-  <div>Date personale:</div>  
+<div class="date-personale">
+  <div>Date personale:</div>
   <div>Nume: {{ patient.first_name }} {{ patient.last_name }}</div>
   <div>Telefon: {{ patient.phone }}</div>
   <div>E-mail: {{ patient.cnp }}</div>
+</div>
 
+<div class="edit-info">
   <a href="">Edit info</a>
+</div>
 
+<div class="programari">
   <div>Programari:</div>
 
   {% if appointments %}
     {% for appointment in appointments %}
-      <div>{{ appointment.week_day }}, {{ appointment.day}} la ora {{ appointment.hour }}</div>    
+      <div>{{ appointment.week_day }}, {{ appointment.day}} la ora {{ appointment.hour }}</div>
     {% endfor %}
   {% else %}
     <div>Nu exista programari</div>
   {% endif %}
+</div>
 
-  
+
 {% endblock %}
